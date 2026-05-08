@@ -1,6 +1,3 @@
-# shell_scripting !!
-
-
 # Bash Scripting
 
 A collection of practical Bash scripts for Linux administration, automation, monitoring, and day-to-day DevOps tasks.
