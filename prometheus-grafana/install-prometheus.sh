@@ -30,8 +30,6 @@ sudo cp prometheus /usr/local/bin/
 sudo cp promtool /usr/local/bin/
 
 echo "Copying configuration..."
-sudo cp -r consoles /etc/prometheus/
-sudo cp -r console_libraries /etc/prometheus/
 sudo cp prometheus.yml /etc/prometheus/
 
 echo "Setting permissions..."
