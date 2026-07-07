@@ -1,15 +1,15 @@
 ## What this script does
 
-1 Checks if the user is root
-2 Logs everything to /var/log/patching_*.log
-3 Checks disk space
-4 Checks failed services
-5 Saves the current kernel version
-6 Runs apt update
-7 Lists available updates
-8 Applies security updates using unattended-upgrade
-9 Checks if a reboot is required
-10 Creates a complete audit log
+- 1 Checks if the user is root
+- 2 Logs everything to /var/log/patching_*.log
+- 3 Checks disk space
+= 4 Checks failed services
+- 5 Saves the current kernel version
+- 6 Runs apt update
+- 7 Lists available updates
+- 8 Applies security updates using unattended-upgrade
+- 9 Checks if a reboot is required
+- 10 Creates a complete audit log
 
 ### Production process around the script
 
@@ -30,9 +30,8 @@ systemctl status docker
 
 **Verify the application:**
 
-curl localhost
-Add the server back to the Load Balancer.
-Monitor the server.
-Interview answer
+- curl localhost
+- Add the server back to the Load Balancer.
+- Monitor the server.
 
-"For Ubuntu production patching, I use apt update to refresh repositories, unattended-upgrade to apply security patches only, check if a reboot is required using /var/run/reboot-required, validate services and applications after patching, and maintain logs for auditing and troubleshooting.
+Note : "For Ubuntu production patching, used **apt update** to refresh repositories, **unattended-upgrade** to apply security patches only, check if a reboot is required using /var/run/reboot-required, validate services and applications after patching, and maintain logs for auditing and troubleshooting.
