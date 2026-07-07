@@ -1,4 +1,4 @@
-What this script does
+## What this script does
 
 ✅ Checks if the user is root
 ✅ Logs everything to /var/log/patching_*.log
@@ -11,22 +11,24 @@ What this script does
 ✅ Checks if a reboot is required
 ✅ Creates a complete audit log
 
-Production process around the script
+### Production process around the script
 
-Before running it:
+**Before running it:**
 
-Get change approval.
-Remove the server from the Load Balancer (if applicable).
-Create an EBS/VM snapshot.
-Run the script.
-Reboot only if /var/run/reboot-required exists.
+- Get change approval.
+- Remove the server from the Load Balancer (if applicable).
+- Create an EBS/VM snapshot.
+- Run the script.
+- Reboot only if /var/run/reboot-required exists.
 
-Verify services:
+**Verify services:**
 
+```bash
 systemctl status nginx
 systemctl status docker
+```
 
-Verify the application:
+**Verify the application:**
 
 curl localhost
 Add the server back to the Load Balancer.
