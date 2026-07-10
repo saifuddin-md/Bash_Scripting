@@ -2,14 +2,14 @@
 
 - **1> Checks if the user is root**
 - **2> Logs everything to /var/log/patching_*.log**
-- 3> Checks disk space
-- 4> Checks failed services
-- 5> Saves the current kernel version
-- 6> Runs apt update
-- 7> Lists available updates
-- 8> Applies security updates using unattended-upgrade
-- 9> Checks if a reboot is required
-- 10> Creates a complete audit log
+- **3> Checks disk space**
+- **4> Checks failed services**
+- **5> Saves the current kernel version**
+- **6> Runs apt update**
+- **7> Lists available updates**
+- **8> Applies security updates using unattended-upgrade**
+- **9> Checks if a reboot is required**
+- **10> Creates a complete audit log**
 
 ### Production process around the script
 
